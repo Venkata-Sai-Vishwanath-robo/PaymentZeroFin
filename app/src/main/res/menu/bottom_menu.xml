@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/set_nav_new"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/nav_ghar"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_qr"
+        android:icon="@drawable/info"
+        android:title="About Us" />
+
+</menu>

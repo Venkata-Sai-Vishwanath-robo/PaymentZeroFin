@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0E0E"
+    android:backgroundTint="#000000"
+    android:padding="0dp">
+
+    <View
+        android:id="@+id/blob1"
+        android:layout_width="615dp"
+        android:layout_height="654dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="368dp"
+        android:background="@drawable/blob_blue1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/blob2"
+        android:layout_width="784dp"
+        android:layout_height="694dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/blob_blue2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/blob3"
+        android:layout_width="636dp"
+        android:layout_height="591dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/blob_blue3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="362dp"
+        android:layout_height="333dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings3d" />
+
+    <!-- Row 1 -->
+    <TextView
+        android:id="@+id/status_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="SMS Read: Checking ..."
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#30394E"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="Settings"
+        android:textSize="10sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/status_sms"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Row 2 -->
+    <TextView
+        android:id="@+id/status_overlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="Overlay: Checking..."
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status_sms" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#30394E"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="Settings"
+        android:textSize="10sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/status_overlay"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Row 3 -->
+    <TextView
+        android:id="@+id/status_usage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="Usage Access: Checking..."
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status_overlay" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#30394E"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="Settings"
+        android:textSize="10sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/status_usage"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Row 4 -->
+    <TextView
+        android:id="@+id/status_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="Battery Optimization: Checking..."
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status_usage" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#30394E"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="Settings"
+        android:textSize="10sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/status_battery"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="293dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="For smooth functioning of the app, ensure the below permissions are granted."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/status_sms"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

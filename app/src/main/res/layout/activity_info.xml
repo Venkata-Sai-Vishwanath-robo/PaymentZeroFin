@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0E0E"
+    android:padding="0dp">
+
+    <View
+        android:id="@+id/blob1"
+        android:layout_width="615dp"
+        android:layout_height="654dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="384dp"
+        android:background="@drawable/blob_blue1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/blob2"
+        android:layout_width="784dp"
+        android:layout_height="694dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/blob_blue2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/blob3"
+        android:layout_width="636dp"
+        android:layout_height="591dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/blob_blue3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="344dp"
+        android:layout_height="332dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/file_000000002f0861f995cbcf2310880366" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto_flex"
+        android:text="Functionality: The app tracks your spending for the current calendar month and shows it to you each time you open any UPI app, helping you stay mindful of your expenses just like you naturally were when using physical cash."
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="No internet access, No cloud sync, No ads, No tracking, No login, No Sign-up, No analytics, No background sync"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
