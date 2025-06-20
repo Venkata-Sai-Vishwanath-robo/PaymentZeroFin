@@ -21,6 +21,8 @@ public class SMSParser { private static final Pattern AMOUNT_PATTERN = Pattern.c
         return total;
     }
 
+    // TODO - The phone pe wallet messages show the spent amount and the balance as well, we need to handle those cases as well
+    // Reading from bank messages works because they don't show the balance
     public static List<String> getUPIMessages(Context context) {
         List<String> messages = new ArrayList<>();
         Uri uriSms = Uri.parse("content://sms/inbox");
