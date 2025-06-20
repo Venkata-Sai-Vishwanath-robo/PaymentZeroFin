@@ -13,6 +13,8 @@ import android.os.Handler;
 import android.os.IBinder;
 
 public class UPIAppMonitorService extends Service {
+    
+    //TO DO – Add banking app’s package names.
     private final String[] upiApps = {
             "com.google.android.apps.nbu.paisa.user",
             "net.one97.paytm",
