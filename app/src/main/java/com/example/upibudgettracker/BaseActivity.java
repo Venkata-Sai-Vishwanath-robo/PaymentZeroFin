@@ -17,8 +17,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base); // contains BottomNavigationView
-
+        setContentView(R.layout.activity_base);
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
         setupBottomNavigation();
@@ -36,7 +35,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     private void setupBottomNavigation() {
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int id = item.getItemId();
-            if (id == getNavBarItemId()) return true; // already active
+            if (id == getNavBarItemId()) return true;
 
             if (id == R.id.nav_home) {
                 startActivity(new Intent(this, SettingsActivity.class));
